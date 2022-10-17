@@ -1,0 +1,243 @@
+.navegador {
+  text-align: center;
+  margin-top: 0px;
+  margin: 0px;
+  word-spacing: 50px;
+  text-align: center;
+  font-family: verdana;
+  list-style-type: none;
+  display: inline;
+}
+.navegador li {
+  list-style-type: inherit;
+}
+.navegador li a {
+  text-decoration: none;
+  link: brown;
+  visited: red;
+}
+
+header nav {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  font-size: 100%;
+}
+header nav .bibi-briefcase {
+  color: rgb(2, 43, 29);
+}
+header nav ul li a {
+  list-style-type: none;
+  display: inline;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 0px;
+  margin: 0px;
+  word-spacing: 50px;
+  text-align: center;
+  font-family: verdana;
+  color: cadetblue;
+}
+
+body {
+  background-color: beige;
+  z-index: 1;
+}
+body h1 {
+  text-align: center;
+}
+body section {
+  background-image: url(../asset/img/fondo-tierra.jpg);
+}
+body .wp {
+  background: radial-gradient(chartreuse, green);
+  color: black;
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  display: flex;
+  align-items: center;
+  animation-name: mB;
+  animation-duration: 4s;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+body p {
+  padding: 0, 5em;
+  font-family: "Times New Roman";
+  font-style: Arial;
+}
+
+.hobbie {
+  text-align: center;
+  font-weight: 100;
+}
+
+.img {
+  width: 30%;
+  height: 30%;
+  display: inline-block;
+  border-radius: 10%;
+  padding: 1em;
+}
+
+.img-mia {
+  position: sticky;
+  margin-left: 60%;
+  z-index: 2;
+  width: 15%;
+  height: 15%;
+}
+
+.trabajos {
+  background-image: url(../asset/img/trabajocolor2.gif);
+  background-size: contain;
+}
+
+.estudio {
+  background-image: url(../asset/img/trabajo-colores-pasteles.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.yt {
+  width: 50%;
+  height: 50%;
+}
+
+@keyframes mB {
+  0% {
+    transform: scale(1, 1);
+    top: 100vh;
+  }
+  25% {
+    transform: scale(1.1, 1.1);
+    top: 95vh;
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+    top: 90vh;
+  }
+  100% {
+    transform: scale(1, 1);
+    top: 100vh;
+  }
+}
+.impo {
+  font-size: larger;
+  border: 1px solid black;
+  background-image: linear-gradient(red, yellow);
+}
+
+.descarga {
+  position: sticky;
+  margin-left: 90%;
+}
+
+.colorl {
+  color: chartreuse;
+}
+
+.fotos {
+  display: flex;
+  flex-direction: row;
+  justify-content: none;
+  align-items: center;
+  height: 50px;
+  width: 55%;
+  height: 55%;
+  border-radius: 1em;
+  padding: 1em;
+  flex-wrap: nowrap;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-items: center;
+  align-items: center;
+}
+
+.g-uno {
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.folleto-grid1 {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: auto;
+  justify-content: center;
+}
+.folleto-grid1 img {
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  border-style: groove;
+  border-color: black;
+  background-color: grey;
+  margin-top: 10%;
+  text-align: center;
+  margin-top: 20%;
+}
+
+/* Mobil First- */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 5em 35em 25em 28em 6em;
+    grid-template-areas: "navg" "info-grid" "folleto-grid1" "cuestionario-grid" "pie";
+  }
+  .g-uno {
+    padding-right: 45%;
+  }
+  .navg li a {
+    color: chartreuse;
+  }
+  .navg svg {
+    color: chartreuse;
+  }
+  .fotos {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+/* Table */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container-grid {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "navg navg" "info-grid info-grid" "folleto-grid1 folleto-grid1" "cuestionario-grid cuestionario-grid" "pie pie";
+    font-family: "Times New Roman";
+  }
+  .g-uno {
+    padding-right: 45%;
+  }
+  .navg li a {
+    color: rgb(245, 14, 6);
+  }
+  .navg svg {
+    color: rgb(250, 41, 4);
+  }
+}
+/* PC */
+@media screen and (min-width: 1024px) {
+  header nav ul li {
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0px;
+    margin: 0px;
+    word-spacing: 50px;
+    text-align: center;
+    font-family: verdana;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,80 @@
+/* Mobil First- */
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .container-grid {
+    grid-template-columns: 100%;
+    grid-template-rows: 5em 35em 25em 28em 6em;
+    grid-template-areas: 
+    "navg"
+    "info-grid"
+    "folleto-grid1"
+    "cuestionario-grid"
+    "pie";
+    }
+    
+    .g {
+    
+    }
+    .g-uno {
+        padding-right: 45%;
+    }
+    .navg li a {
+        color: $color;
+    }
+    .navg svg {
+        color: $color
+    }
+    .media-hobbies{
+    
+    }
+    .fotos{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    }
+    
+    /* Table */
+    @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container-grid {
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "navg navg"
+    "info-grid info-grid"
+    "folleto-grid1 folleto-grid1"
+    "cuestionario-grid cuestionario-grid"
+    "pie pie";
+    font-family: 'Times New Roman';
+    }
+    
+    .g-uno {
+        padding-right: 45%;
+    }
+    .navg li a {
+        color: rgb(245, 14, 6);
+    }
+    .navg svg {
+        color: rgb(250, 41, 4);
+    }
+    .media-estudios{
+    
+    }
+    }
+    /* PC */
+    @media screen and (min-width: 1024px) {
+        header{
+            nav{
+                ul{
+                    li{
+                        list-style-type: none;
+                        display: inline;
+                        text-decoration: none;
+                        text-align: center;
+                        margin-top: 0px;
+                        margin: 0px;
+                        word-spacing: 50px;
+                        text-align: center;
+                        font-family: verdana;
+                    }
+                }
+            }
+        } 
+    }

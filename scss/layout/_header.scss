@@ -1,0 +1,45 @@
+.navegador {
+    text-align: center;
+    margin-top: 0px;
+    margin: 0px;
+    word-spacing: 50px;
+    text-align: center;
+    font-family: verdana;
+    list-style-type: none;
+    display: inline;
+    li {
+        list-style-type: inherit;
+        a {
+            text-decoration: none;
+            link: brown;
+            visited: red
+        }
+    }
+}
+header{
+    nav{
+        display: block;
+        text-decoration: none;
+        text-align: center;
+        font-size: 100%;
+        .bibi-briefcase{
+            color: rgb(2, 43, 29);
+        }
+        ul{
+            li{
+                a{
+                list-style-type: none;
+                display: inline;
+                text-decoration: none;
+                text-align: center;
+                margin-top: 0px;
+                margin: 0px;
+                word-spacing: 50px;
+                text-align: center;
+                font-family: verdana;
+                color: cadetblue;
+            }
+            }
+        }
+    }
+}  

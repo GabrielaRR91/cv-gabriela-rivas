@@ -1,0 +1,122 @@
+body{
+    background-color: $backgroun-principal;
+    z-index: 1;
+    h1 {
+        text-align: center;
+    }
+    section {
+        background-image: url(../asset/img/fondo-tierra.jpg);
+    }
+    .wp {
+        background: radial-gradient(chartreuse, green);
+        color: black;
+        border-radius: 50%;
+        width: 3em;
+        height: 3em;
+        position: fixed;
+        bottom: 1em;
+        right: 1em;
+        display: flex;
+        align-items: center;
+        animation-name: mB;
+        animation-duration: 4s;
+        animation-delay: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+    p {
+        padding: 0,5em;
+        font-family: $fuente-secundaria;
+        font-style: $fuente-principal;
+    }
+}
+.hobbie {
+    text-align: center;
+    font-weight: 100;
+}
+.img {
+    width: 30%;
+    height: 30%;
+    display: inline-block;
+    border-radius: 10%;
+    padding: 1em;
+}
+.img-mia {
+    position: sticky;
+    margin-left: 60%;
+    z-index: 2;
+    width: 15%;
+    height: 15%;
+}
+.trabajos {
+    background-image: url(../asset/img/trabajocolor2.gif);
+    background-size: contain;
+}
+.estudio {
+    background-image: url(../asset/img/trabajo-colores-pasteles.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.yt {
+    width: 50%;
+    height: 50%;
+}
+@keyframes mB {
+    0%{
+        transform: scale(1, 1);
+        top: 100vh;
+    }
+    25% {
+        transform: scale(1.1, 1.1);
+        top: 95vh;
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+        top: 90vh;
+    }
+    100% {
+        transform: scale(1, 1);
+        top: 100vh;
+    }
+}
+.impo {
+font-size: larger;
+border: 1px solid black;
+background-image: linear-gradient(red, yellow);
+}
+.descarga {
+    position: sticky;
+    margin-left: 90%;
+}
+.colorl {
+    color: $color;
+}
+.fotos {
+    @include propiedades-flex (row, none, center);
+    height: 50px;
+    width: 55%;
+    height: 55%;
+    border-radius: 1em;
+    padding: 1em;
+    flex-wrap: nowrap;
+}
+.info-grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+    align-items: center;
+}
+.g-uno {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.folleto-grid1 {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto;
+    justify-content: center;
+    img{
+        width: 100%;
+        height: auto;
+    }
+}
