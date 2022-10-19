@@ -200,6 +200,9 @@ footer {
   .navg li a {
     color: chartreuse;
   }
+  nav ul li{
+  list-style: none;
+  }
   .navg svg {
     color: chartreuse;
   }

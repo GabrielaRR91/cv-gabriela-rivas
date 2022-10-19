@@ -10,10 +10,26 @@
     "cuestionario-grid"
     "pie";
     }
-    
-    .g {
-    
+    header{ 
+            nav{
+                ul{
+                    list-style: none;
+                    li{
+                        a{
+                    list-style-type: none;
+                    display: inline;
+                    text-decoration: none;
+                    text-align: center;
+                    margin-top: 0px;
+                    margin: 0px;
+                    word-spacing: 50px;
+                    text-align: center;
+                    font-family: verdana;
+                }
+            }
+        }
     }
+}
     .g-uno {
         padding-right: 45%;
     }
@@ -44,7 +60,27 @@
     "pie pie";
     font-family: 'Times New Roman';
     }
-    
+    header{ 
+        nav{
+            ul{
+                list-style: none;
+                li{
+                    a{
+                list-style-type: none;
+                display: inline;
+                text-decoration: none;
+                text-align: center;
+                margin-top: 0px;
+                margin: 0px;
+                word-spacing: 50px;
+                text-align: center;
+                font-family: verdana;
+                color: rgb(46, 137, 197);
+            }
+        }
+    }
+}
+}
     .g-uno {
         padding-right: 45%;
     }
