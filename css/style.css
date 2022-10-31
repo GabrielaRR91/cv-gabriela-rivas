@@ -26,6 +26,9 @@ header nav {
 header nav .bibi-briefcase {
   color: rgb(2, 43, 29);
 }
+header nav ul li {
+  list-style: none;
+}
 header nav ul li a {
   list-style-type: none;
   display: inline;
@@ -36,11 +39,11 @@ header nav ul li a {
   word-spacing: 50px;
   text-align: center;
   font-family: verdana;
-  color: cadetblue;
+  color: rgb(241, 248, 248);
 }
 
 body {
-  background-color: beige;
+  background-color: rgb(241, 205, 137);
   z-index: 1;
 }
 body h1 {
@@ -94,7 +97,7 @@ body p {
 }
 
 .trabajos {
-  background-image: url(../asset/img/trabajocolor2.gif);
+  background-color: rgb(17, 136, 96);
   background-size: contain;
 }
 
@@ -194,14 +197,25 @@ footer {
     grid-template-rows: 5em 35em 25em 28em 6em;
     grid-template-areas: "navg" "info-grid" "folleto-grid1" "cuestionario-grid" "pie";
   }
+  header nav ul {
+    list-style: none;
+  }
+  header nav ul li a {
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0px;
+    margin: 0px;
+    word-spacing: 50px;
+    text-align: center;
+    font-family: verdana;
+  }
   .g-uno {
     padding-right: 45%;
   }
   .navg li a {
     color: chartreuse;
-  }
-  nav ul li{
-  list-style: none;
   }
   .navg svg {
     color: chartreuse;
@@ -209,6 +223,8 @@ footer {
   .fotos {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 /* Table */
@@ -217,6 +233,26 @@ footer {
     grid-template-columns: 50% 50%;
     grid-template-areas: "navg navg" "info-grid info-grid" "folleto-grid1 folleto-grid1" "cuestionario-grid cuestionario-grid" "pie pie";
     font-family: "Times New Roman";
+  }
+  header nav {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+  }
+  header nav ul {
+    list-style: none;
+  }
+  header nav ul li a {
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 0px;
+    margin: 0px;
+    word-spacing: 50px;
+    text-align: center;
+    font-family: verdana;
+    color: rgb(46, 137, 197);
   }
   .g-uno {
     padding-right: 45%;

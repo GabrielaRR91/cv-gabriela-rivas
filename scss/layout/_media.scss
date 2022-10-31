@@ -45,7 +45,10 @@
     .fotos{
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
+    
     }
     
     /* Table */
@@ -62,6 +65,9 @@
     }
     header{ 
         nav{
+            display: block;
+            text-decoration: none;
+            text-align: center;
             ul{
                 list-style: none;
                 li{
